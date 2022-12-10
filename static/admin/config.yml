@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: aliciacatalina/andressalazar
+  repo: aliciacatalina/andressazalar
 
 media_folder: content/assets
 public_folder: ../assets
