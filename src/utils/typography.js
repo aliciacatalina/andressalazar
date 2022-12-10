@@ -6,6 +6,9 @@ Wordpress2016.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "body, html, h1, h2, h3, h4, h5": {
+      fontFamily: "Inter",
+    }
   }
 }
 
