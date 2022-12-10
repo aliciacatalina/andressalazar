@@ -1,0 +1,317 @@
+html, body {
+  color: #0E0E0E;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a, a:visited {
+  color: #0E0E0E;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+.header {
+  background: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 20px);
+  align-items: center;
+  margin: 0 10px;
+}
+
+.header-item {
+  flex: 1 0 33.3%;
+}
+
+.header-title {
+  text-align: center;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.header-menu li {
+  padding: 0 10px;
+}
+
+.menu-slide {
+  align-items: center;
+  background: #FFFFEB;
+  position: absolute;
+  display: none;
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+}
+
+.menu-slide p {
+  width: 80%;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.menu-slide.visible {
+  visibility: visible;
+  display: flex;
+}
+
+.projects-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  gap: 10px;
+  position: relative;
+  width: 80%;
+}
+
+.projects-index-card {
+  flex: 1 0 350px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 250px;
+}
+
+.banking-circle {
+  background: #DF7762;
+}
+
+.oticon-medical {
+  background: #8AFAFF;
+}
+
+.projects-index-card h5 {
+  font-family: 'Futura';
+  font-weight: normal;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.projects-index-card h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.projects-index-card span {
+  margin: 15px 0;
+    display: block;
+}
+
+.about {
+  background: #FFFFEB;
+}
+
+.about p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.about-email {
+  display: block;
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  max-width: 100vw;
+  overflow: auto;
+}
+
+.intro {
+  background: #FFFCFC;
+}
+
+.intro-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  right: 0;
+  top: 0;
+  max-width: 600px;
+  opacity: 0;
+  transition: .3s all linear;
+  visibility: hidden;
+  z-index: 1;
+}
+
+.intro h1 {
+  margin: 0;
+  max-width: 400px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.5s ease;
+  z-index: 2;
+}
+
+.intro-text .name {
+  text-decoration: underline;
+}
+
+.intro-text:hover > h1 {
+  background: #9DD93D;
+}
+
+.intro-text:hover > img {
+  opacity: 1;
+  visibility: visible;
+}
+
+.experience {
+  background-color: #FFEBF5;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 25%;
+  max-width: 460px;
+}
+
+.experience-card-header {
+  background: #9DE02F;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-direction: column;
+  height: 160px;
+  padding: 10px;
+}
+
+.experience-card-header h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 45%;
+}
+
+.experience-card-header h4 {
+  flex: 1;
+  font-style: italic;
+}
+
+.experience-card .time {
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.experience-card-details {
+  padding: 10px;
+}
+
+.experience-card-details ul {
+  list-style: initial;
+  padding: 0 15px;
+}
+
+.experience-card:nth-child(2) .experience-card-header {
+  background-color: #B1E660;
+}
+
+.experience-card:nth-child(3) .experience-card-header {
+  background-color: #CAEE92;
+}
+
+.project {
+  background: #EBFFFF;
+}
+
+.project-wrapper {
+  display: flex;
+  max-width: 75%;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  flex: 1;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.project-image img {
+  max-height: 80vh;
+}
+
+.project-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.project-details h4 {
+  font-family: "Futura";
+  font-size: 16px;
+  text-decoration: underline;
+  margin-bottom: 40px;
+}
+
+.project-details h2 {
+  flex: 1;
+  font-size: 40px;
+  font-weight: bolder;
+  width: 50%;
+}
+
+.end {
+  background: #FFF5EB;
+  flex-direction: column;
+}
+
+.end h1 {
+  font-size: 40px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.end-header {
+  display: flex;
+  height: 60%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
